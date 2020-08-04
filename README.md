@@ -31,7 +31,10 @@ https://help.crossbrowsertesting.com/selenium-testing/continuous-integration/ins
   
   1. Set up execution for Z4J Sync scriptas a build or post-build action
       1. Sample Command - python sync_z4j.py
- 
+      
+Screenshots from my demo:
+https://gyazo.com/c77b1ca8c713509f43ba65ca267b9c6e
+https://gyazo.com/900c0e33d4180c3d154096287b7bf516
 
 You can see this in action during our SmartBear Webinar - Test, Track, and Analyze: Scaling Test Automation Effectively in Agile
 https://smartbear.com/resources/webinars/scaling-test-automation-in-agile/
