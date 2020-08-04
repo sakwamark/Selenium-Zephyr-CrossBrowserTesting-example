@@ -47,7 +47,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
-*.py,cover
+*.py,cover1
 .hypothesis/
 .pytest_cache/
 
@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 
 config.json
+/Results
+/Reports
