@@ -36,6 +36,15 @@ Screenshots from my demo:
 https://gyazo.com/c77b1ca8c713509f43ba65ca267b9c6e
 https://gyazo.com/900c0e33d4180c3d154096287b7bf516
 
+## Sync Z4J Script
+
+This Script uses three api calls to do the following:
+  1. Generate JWT Token
+  1. Create Zephyr Test Automation Job: Indicating automation type, where results are located, and which test cycle to sync them too
+  1. Execute Job with create job id
+  
+  You can add more API calls to update and delete jobs as well. https://zephyrdocs.atlassian.net/wiki/spaces/ZFJCLOUD/pages/1686798372/A.T.O.M+API+Documentation
+
 You can see this in action during our SmartBear Webinar - Test, Track, and Analyze: Scaling Test Automation Effectively in Agile
 https://smartbear.com/resources/webinars/scaling-test-automation-in-agile/
 
