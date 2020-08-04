@@ -14,23 +14,23 @@ https://marketplace.atlassian.com/apps/1014681/zephyr-for-jira-test-management?h
 ### Workflow
 With these solutions, we can seamlessly execute a Jenkins CI job with a selenium test executing on a real machine from CrossBrowserTesting and results automatically synchronized into Jira via a Zephyr test cycle. This workflow requires being an active user on both tools. 
 
-Step 1 - Install the CrossBrowserTesting Jenkins plugin 
+1.Install the CrossBrowserTesting Jenkins plugin 
 https://help.crossbrowsertesting.com/selenium-testing/continuous-integration/installing-jenkins/
 
-Step 2 - Download Selenium Tests (selenium_test.py) and Zephyr for Jira Synchronize Script (sync_z4j.py) example from this repo
+1.Download Selenium Tests (selenium_test.py) and Zephyr for Jira Synchronize Script (sync_z4j.py) example from this repo
 
-Step 3 - Fill out parameters in config.json file to be authenticated into Zephyr for Jira https://zephyrdocs.atlassian.net/wiki/spaces/ZFJCLOUD/pages/1686798372/A.T.O.M+API+Documentation
+1.Fill out parameters in config.json file to be authenticated into Zephyr for Jira https://zephyrdocs.atlassian.net/wiki/spaces/ZFJCLOUD/pages/1686798372/A.T.O.M+API+Documentation
 
-Step 4 - Set up Jenkins Job with both tools
-  a. Enable CrossBrowserTesting.com in Build Environment according to above docs. Select desired OS, Browser, and Resolution
+1.Set up Jenkins Job with both tools
+  1.Enable CrossBrowserTesting.com in Build Environment according to above docs. Select desired OS, Browser, and Resolution
   https://help.crossbrowsertesting.com/wp-content/uploads/2019/06/Build_Environment_1.png
   
-  b. Set up first build step to run selenium tests and execute junit xml file as the report
+  1.Set up first build step to run selenium tests and execute junit xml file as the report
       
    Note: This can be done in many ways. During the webinar, I used the shining panda jenkins plugin with the pytest module to do this. 
       Sample Command - py.test --junitxml "/Results/results.xml" "selenium_test.py"
   
-  c. Set up execution for Z4J Sync scriptas a build or post-build action
+  1.Set up execution for Z4J Sync scriptas a build or post-build action
       
    Sample Command - python sync_z4j.py
  
