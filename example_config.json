@@ -1,0 +1,9 @@
+{
+	"COMMENT": "This is an example file. Fill parameters and change file name to config.json", 
+	"ACCESS_KEY":"Access Key from Zephyr Menu",
+	"SECRET_KEY":"Secret Key from Zephyr Menu",
+	"ACCOUNT_ID":"ID of Atlassian User Account",
+	"PROJECT_ID":"Numeric ID of Jira Project",
+	"REPORT_DIRECTORY":"C:/Tests/Results",
+	"RESULT_FILE":"results.xml"
+}
