@@ -26,10 +26,12 @@ Step 4 - Set up Jenkins Job with both tools
   https://help.crossbrowsertesting.com/wp-content/uploads/2019/06/Build_Environment_1.png
   
   b. Set up first build step to run selenium tests and execute junit xml file as the report
+      
       Note: This can be done in many ways. During the webinar, I used the shining panda jenkins plugin with the pytest module to do this. 
       Sample Command - py.test --junitxml "/Results/results.xml" "selenium_test.py"
   
   c. Set up execution for Z4J Sync scriptas a build or post-build action
+      
       Sample Command - python sync_z4j.py
  
 
