@@ -22,17 +22,15 @@ https://help.crossbrowsertesting.com/selenium-testing/continuous-integration/ins
 1. Fill out parameters in config.json file to be authenticated into Zephyr for Jira https://zephyrdocs.atlassian.net/wiki/spaces/ZFJCLOUD/pages/1686798372/A.T.O.M+API+Documentation
 
 1. Set up Jenkins Job with both tools
-  1.Enable CrossBrowserTesting.com in Build Environment according to above docs. Select desired OS, Browser, and Resolution
+  1. Enable CrossBrowserTesting.com in Build Environment according to above docs. Select desired OS, Browser, and Resolution
   https://help.crossbrowsertesting.com/wp-content/uploads/2019/06/Build_Environment_1.png
   
   1. Set up first build step to run selenium tests and execute junit xml file as the report
-      
-   Note: This can be done in many ways. During the webinar, I used the shining panda jenkins plugin with the pytest module to do this. 
+      1. Note: This can be done in many ways. During the webinar, I used the shining panda jenkins plugin with the pytest module to do this. 
       Sample Command - py.test --junitxml "/Results/results.xml" "selenium_test.py"
   
   1. Set up execution for Z4J Sync scriptas a build or post-build action
-      
-   Sample Command - python sync_z4j.py
+      1. Sample Command - python sync_z4j.py
  
 
 You can see this in action during our SmartBear Webinar - Test, Track, and Analyze: Scaling Test Automation Effectively in Agile
